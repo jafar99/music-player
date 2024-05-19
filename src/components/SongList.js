@@ -7,7 +7,7 @@ const SongList = ({ selectSong }) => {
 
   useEffect(() => {
     const API_KEY = '946658c4ed7d3affe6e08025c745a5b6';
-    const LASTFM_API_URL = `http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${API_KEY}&format=json`;
+    const LASTFM_API_URL = `https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${API_KEY}&format=json`;
 
     axios.get(LASTFM_API_URL)
       .then(response => {
